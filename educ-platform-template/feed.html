@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feed Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow-md py-4 px-6 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-indigo-600">MyFeed</h1>
+      <nav>
+        <button class="text-sm text-indigo-600 hover:text-indigo-800">Profile</button>
+      </nav>
+    </header>
+
+    <!-- Main Feed -->
+    <main class="max-w-2xl mx-auto mt-6 space-y-6 px-4">
+      <!-- Post Card -->
+      <div class="bg-white shadow rounded-lg p-4">
+        <div class="flex items-center space-x-4">
+          <img
+            class="w-10 h-10 rounded-full"
+            src="https://randomuser.me/api/portraits/women/68.jpg"
+            alt="User avatar"
+          />
+          <div>
+            <p class="font-semibold">Jane Doe</p>
+            <p class="text-sm text-gray-500">2 hours ago</p>
+          </div>
+        </div>
+
+        <p class="mt-4 text-gray-800">Just enjoying the view 🌄 #nature #relax</p>
+
+        <img
+          class="mt-4 rounded-lg w-full object-cover max-h-60"
+          src="https://source.unsplash.com/600x300/?nature,landscape"
+          alt="Post image"
+        />
+
+        <!-- Action Buttons -->
+        <div class="flex justify-between mt-4 text-sm text-gray-600">
+          <button class="hover:text-indigo-600">❤️ Like</button>
+          <button class="hover:text-indigo-600">💬 Comment</button>
+          <button class="hover:text-indigo-600">🔄 Share</button>
+        </div>
+      </div>
+
+      <!-- Repeatable Post Card -->
+      <div class="bg-white shadow rounded-lg p-4">
+        <div class="flex items-center space-x-4">
+          <img
+            class="w-10 h-10 rounded-full"
+            src="https://randomuser.me/api/portraits/men/45.jpg"
+            alt="User avatar"
+          />
+          <div>
+            <p class="font-semibold">John Smith</p>
+            <p class="text-sm text-gray-500">4 hours ago</p>
+          </div>
+        </div>
+
+        <p class="mt-4 text-gray-800">Coding my next project 🚀 #webdev</p>
+
+        <img
+          class="mt-4 rounded-lg w-full object-cover max-h-60"
+          src="https://source.unsplash.com/600x300/?coding,technology"
+          alt="Post image"
+        />
+
+        <!-- Action Buttons -->
+        <div class="flex justify-between mt-4 text-sm text-gray-600">
+          <button class="hover:text-indigo-600">❤️ Like</button>
+          <button class="hover:text-indigo-600">💬 Comment</button>
+          <button class="hover:text-indigo-600">🔄 Share</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
